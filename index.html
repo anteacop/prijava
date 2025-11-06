@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <title>Prijava</title>
+<style>
+
+#prijava-form {
+  background-color: #f5f5dc; 
+  border: 2px solid saddlebrown; 
+  border-radius: 10px; 
+  padding: 20px;
+  max-width: 400px; 
+  margin: 30px auto; 
+  font-family: "Slabo 27px", serif;
+  color: saddlebrown;
+}
+
+
+#prijava-form legend {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: maroon;
+}
+
+
+#prijava-form label {
+  display: block; 
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+
+#prijava-form input,
+#prijava-form select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #a0522d; 
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 1em;
+  box-sizing: border-box; 
+}
+
+
+#prijava-form button {
+  background-color: maroon;
+  color: beige;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+#prijava-form button:hover {
+  background-color: saddlebrown; 
+}
+</style>
+</head>
+<body>
+  <form id="prijava-form" name="prijava-form" action="#" method="post">
+  <fieldset>
+    <legend>Prijava na stranicu</legend>
+
+    <label for="korisnicko_ime">Korisničko ime:</label>
+    <input type="text" id="korisnicko_ime" name="korisnicko_ime" placeholder="Unesi korisničko ime"><br><br>
+
+    <label for="lozinka">Lozinka:</label>
+    <input type="password" id="lozinka" name="lozinka" placeholder="Unesi lozinku" maxlength="8"><br><br>
+
+    <label for="email">Unesite e-mail:</label>
+    <input type="email" id="email" name="email" placeholder="Unesi e-mail"><br><br>
+
+    <label for="newsletter">Želite li primati naše mailove sa dodatnim informacijama?</label>
+    <select id="newsletter" name="newsletter">
+      <option value="da">da</option>
+      <option value="ne">ne</option>
+    </select><br><br>
+
+    <label for="izvor">Kako ste saznali za našu stranicu?</label><br>
+    <input list="odaberi" id="izvor" name="izvor" placeholder="Odaberi opciju">
+    <datalist id="odaberi">
+      <option value="prijatelji">
+      <option value="društvene mreže">
+      <option value="reklama">
+    </datalist><br><br>
+
+    <button type="submit">Prijavi se</button>
+  </fieldset>
+</form>
+</body>
+</html>
+
+   
+  
